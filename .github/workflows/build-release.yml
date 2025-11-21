@@ -112,4 +112,4 @@ jobs:
       - name: Upload to PyPI
         run: |
           python -m pip install twine
-          twine upload -u __token__ -p "${{ secrets.PYPI_DEV_TOKEN }}" dist/* --verbose
+          twine upload -u __token__ -p "${{ secrets.PYPI_DEV_TOKEN }}" dist/* --verbose --repository testpypi
