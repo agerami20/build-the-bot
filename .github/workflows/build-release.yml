@@ -103,7 +103,7 @@ jobs:
       
       # Clean up old builds
       - name: Clean dist folder
-        run: rm -rf dist/*
+        run: rm -rf dist build *.egg-info
 
       # Build the Python package
       - name: Build package
