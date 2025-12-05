@@ -29,6 +29,7 @@ test = [
     "pytest-asyncio",
 ]
 [tool.setuptools]
-packages = ["build_the_bot"]
+packages.find.include = ['build_the_bot*']
+packages.find.exclude = ['build_the_bot*tests*']
 [tool.coverage.report]
 omit = ["build_the_bot/tests/*"]
